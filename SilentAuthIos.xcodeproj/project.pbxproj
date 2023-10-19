@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2435E092AE155CE00762CA2 /* SilentAuthIosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2435E082AE155CE00762CA2 /* SilentAuthIosApp.swift */; };
+		F2435E0B2AE155CE00762CA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2435E0A2AE155CE00762CA2 /* ContentView.swift */; };
+		F2435E0D2AE155CF00762CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2435E0C2AE155CF00762CA2 /* Assets.xcassets */; };
+		F2435E102AE155CF00762CA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2435E0F2AE155CF00762CA2 /* Preview Assets.xcassets */; };
+		F2435E1A2AE155CF00762CA2 /* SilentAuthIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2435E192AE155CF00762CA2 /* SilentAuthIosTests.swift */; };
+		F2435E242AE155CF00762CA2 /* SilentAuthIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2435E232AE155CF00762CA2 /* SilentAuthIosUITests.swift */; };
+		F2435E262AE155CF00762CA2 /* SilentAuthIosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2435E252AE155CF00762CA2 /* SilentAuthIosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2435E162AE155CF00762CA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2435DFD2AE155CE00762CA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2435E042AE155CE00762CA2;
+			remoteInfo = SilentAuthIos;
+		};
+		F2435E202AE155CF00762CA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2435DFD2AE155CE00762CA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2435E042AE155CE00762CA2;
+			remoteInfo = SilentAuthIos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2435E052AE155CE00762CA2 /* SilentAuthIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentAuthIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2435E082AE155CE00762CA2 /* SilentAuthIosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentAuthIosApp.swift; sourceTree = "<group>"; };
+		F2435E0A2AE155CE00762CA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F2435E0C2AE155CF00762CA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2435E0F2AE155CF00762CA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2435E152AE155CF00762CA2 /* SilentAuthIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentAuthIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2435E192AE155CF00762CA2 /* SilentAuthIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentAuthIosTests.swift; sourceTree = "<group>"; };
+		F2435E1F2AE155CF00762CA2 /* SilentAuthIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentAuthIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2435E232AE155CF00762CA2 /* SilentAuthIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentAuthIosUITests.swift; sourceTree = "<group>"; };
+		F2435E252AE155CF00762CA2 /* SilentAuthIosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentAuthIosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2435E022AE155CE00762CA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2435E122AE155CF00762CA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2435E1C2AE155CF00762CA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2435DFC2AE155CE00762CA2 = {
+			isa = PBXGroup;
+			children = (
+				F2435E072AE155CE00762CA2 /* SilentAuthIos */,
+				F2435E182AE155CF00762CA2 /* SilentAuthIosTests */,
+				F2435E222AE155CF00762CA2 /* SilentAuthIosUITests */,
+				F2435E062AE155CE00762CA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2435E062AE155CE00762CA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2435E052AE155CE00762CA2 /* SilentAuthIos.app */,
+				F2435E152AE155CF00762CA2 /* SilentAuthIosTests.xctest */,
+				F2435E1F2AE155CF00762CA2 /* SilentAuthIosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2435E072AE155CE00762CA2 /* SilentAuthIos */ = {
+			isa = PBXGroup;
+			children = (
+				F2435E082AE155CE00762CA2 /* SilentAuthIosApp.swift */,
+				F2435E0A2AE155CE00762CA2 /* ContentView.swift */,
+				F2435E0C2AE155CF00762CA2 /* Assets.xcassets */,
+				F2435E0E2AE155CF00762CA2 /* Preview Content */,
+			);
+			path = SilentAuthIos;
+			sourceTree = "<group>";
+		};
+		F2435E0E2AE155CF00762CA2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F2435E0F2AE155CF00762CA2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2435E182AE155CF00762CA2 /* SilentAuthIosTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2435E192AE155CF00762CA2 /* SilentAuthIosTests.swift */,
+			);
+			path = SilentAuthIosTests;
+			sourceTree = "<group>";
+		};
+		F2435E222AE155CF00762CA2 /* SilentAuthIosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2435E232AE155CF00762CA2 /* SilentAuthIosUITests.swift */,
+				F2435E252AE155CF00762CA2 /* SilentAuthIosUITestsLaunchTests.swift */,
+			);
+			path = SilentAuthIosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2435E042AE155CE00762CA2 /* SilentAuthIos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2435E292AE155CF00762CA2 /* Build configuration list for PBXNativeTarget "SilentAuthIos" */;
+			buildPhases = (
+				F2435E012AE155CE00762CA2 /* Sources */,
+				F2435E022AE155CE00762CA2 /* Frameworks */,
+				F2435E032AE155CE00762CA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SilentAuthIos;
+			productName = SilentAuthIos;
+			productReference = F2435E052AE155CE00762CA2 /* SilentAuthIos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2435E142AE155CF00762CA2 /* SilentAuthIosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2435E2C2AE155CF00762CA2 /* Build configuration list for PBXNativeTarget "SilentAuthIosTests" */;
+			buildPhases = (
+				F2435E112AE155CF00762CA2 /* Sources */,
+				F2435E122AE155CF00762CA2 /* Frameworks */,
+				F2435E132AE155CF00762CA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2435E172AE155CF00762CA2 /* PBXTargetDependency */,
+			);
+			name = SilentAuthIosTests;
+			productName = SilentAuthIosTests;
+			productReference = F2435E152AE155CF00762CA2 /* SilentAuthIosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2435E1E2AE155CF00762CA2 /* SilentAuthIosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2435E2F2AE155CF00762CA2 /* Build configuration list for PBXNativeTarget "SilentAuthIosUITests" */;
+			buildPhases = (
+				F2435E1B2AE155CF00762CA2 /* Sources */,
+				F2435E1C2AE155CF00762CA2 /* Frameworks */,
+				F2435E1D2AE155CF00762CA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2435E212AE155CF00762CA2 /* PBXTargetDependency */,
+			);
+			name = SilentAuthIosUITests;
+			productName = SilentAuthIosUITests;
+			productReference = F2435E1F2AE155CF00762CA2 /* SilentAuthIosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2435DFD2AE155CE00762CA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F2435E042AE155CE00762CA2 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					F2435E142AE155CF00762CA2 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = F2435E042AE155CE00762CA2;
+					};
+					F2435E1E2AE155CF00762CA2 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = F2435E042AE155CE00762CA2;
+					};
+				};
+			};
+			buildConfigurationList = F2435E002AE155CE00762CA2 /* Build configuration list for PBXProject "SilentAuthIos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2435DFC2AE155CE00762CA2;
+			productRefGroup = F2435E062AE155CE00762CA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2435E042AE155CE00762CA2 /* SilentAuthIos */,
+				F2435E142AE155CF00762CA2 /* SilentAuthIosTests */,
+				F2435E1E2AE155CF00762CA2 /* SilentAuthIosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2435E032AE155CE00762CA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2435E102AE155CF00762CA2 /* Preview Assets.xcassets in Resources */,
+				F2435E0D2AE155CF00762CA2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2435E132AE155CF00762CA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2435E1D2AE155CF00762CA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2435E012AE155CE00762CA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2435E0B2AE155CE00762CA2 /* ContentView.swift in Sources */,
+				F2435E092AE155CE00762CA2 /* SilentAuthIosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2435E112AE155CF00762CA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2435E1A2AE155CF00762CA2 /* SilentAuthIosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2435E1B2AE155CF00762CA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2435E242AE155CF00762CA2 /* SilentAuthIosUITests.swift in Sources */,
+				F2435E262AE155CF00762CA2 /* SilentAuthIosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2435E172AE155CF00762CA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2435E042AE155CE00762CA2 /* SilentAuthIos */;
+			targetProxy = F2435E162AE155CF00762CA2 /* PBXContainerItemProxy */;
+		};
+		F2435E212AE155CF00762CA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2435E042AE155CE00762CA2 /* SilentAuthIos */;
+			targetProxy = F2435E202AE155CF00762CA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F2435E272AE155CF00762CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2435E282AE155CF00762CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2435E2A2AE155CF00762CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SilentAuthIos/Preview Content\"";
+				DEVELOPMENT_TEAM = 24J73JBYJ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SilentAuthIos.SilentAuthIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2435E2B2AE155CF00762CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SilentAuthIos/Preview Content\"";
+				DEVELOPMENT_TEAM = 24J73JBYJ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SilentAuthIos.SilentAuthIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2435E2D2AE155CF00762CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24J73JBYJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SilentAuthIos.SilentAuthIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilentAuthIos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SilentAuthIos";
+			};
+			name = Debug;
+		};
+		F2435E2E2AE155CF00762CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24J73JBYJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SilentAuthIos.SilentAuthIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilentAuthIos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SilentAuthIos";
+			};
+			name = Release;
+		};
+		F2435E302AE155CF00762CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24J73JBYJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SilentAuthIos.SilentAuthIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SilentAuthIos;
+			};
+			name = Debug;
+		};
+		F2435E312AE155CF00762CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24J73JBYJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SilentAuthIos.SilentAuthIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SilentAuthIos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2435E002AE155CE00762CA2 /* Build configuration list for PBXProject "SilentAuthIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2435E272AE155CF00762CA2 /* Debug */,
+				F2435E282AE155CF00762CA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2435E292AE155CF00762CA2 /* Build configuration list for PBXNativeTarget "SilentAuthIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2435E2A2AE155CF00762CA2 /* Debug */,
+				F2435E2B2AE155CF00762CA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2435E2C2AE155CF00762CA2 /* Build configuration list for PBXNativeTarget "SilentAuthIosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2435E2D2AE155CF00762CA2 /* Debug */,
+				F2435E2E2AE155CF00762CA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2435E2F2AE155CF00762CA2 /* Build configuration list for PBXNativeTarget "SilentAuthIosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2435E302AE155CF00762CA2 /* Debug */,
+				F2435E312AE155CF00762CA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2435DFD2AE155CE00762CA2 /* Project object */;
+}
