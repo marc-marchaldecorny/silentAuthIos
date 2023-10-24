@@ -71,15 +71,17 @@ struct ContentView: View {
                             print("Error")
                         }
                     }
-                }
+                }.padding(10)
                 
                 if verificationSuccess != nil {
                     if verificationSuccess == true {
                         Text("Verification Successful")
                             .background(Color.green)
+                            .padding(5)
                     } else {
                         Text("Verification Failed")
                             .background(Color.red)
+                            .padding(5)
                         //Failover layout
                     }
                 }
@@ -101,7 +103,7 @@ struct ContentView: View {
         }
         
         if verifyLogs.checkCodeDate != nil {
-            Text("callURL Time: \(returnDateMillisecString(inputDate: verifyLogs.checkCodeDate!))").font(.system(size: 10, weight: .semibold))
+            Text("checkCode Time: \(returnDateMillisecString(inputDate: verifyLogs.checkCodeDate!))").font(.system(size: 10, weight: .semibold))
         }
     }
     
