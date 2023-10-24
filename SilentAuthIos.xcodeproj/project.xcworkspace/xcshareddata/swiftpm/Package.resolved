@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "silentauth-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/silentauth/silentauth-sdk-ios.git",
+      "state" : {
+        "revision" : "d5b70f8ef7911b649eafedfbc8b1428b111e8a17",
+        "version" : "1.0.7"
+      }
+    },
+    {
+      "identity" : "verify-silent-auth-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Vonage/verify-silent-auth-sdk-ios.git",
+      "state" : {
+        "revision" : "f1c921f4b88a7a330ebfb400522bbd79a87eaee5",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}

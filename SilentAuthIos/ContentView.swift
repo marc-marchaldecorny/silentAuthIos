@@ -15,85 +15,94 @@ struct CheckResponse: Codable {
     let code: String
 }
 
-struct logEvents {
-    var startDate: Date = Date()
-    var getAuthURLDate: Date = Date()
-    var callURLDate: Date = Date()
-    var checkCodeDate: Date = Date()
-    
+struct LogEvents {
+    var startDate: Date?
+    var getAuthURLDate: Date?
+    var callURLDate: Date?
+    var checkCodeDate: Date?
 }
 
 
 struct ContentView: View {
     @State var number = ""
     @State var verificationSuccess: Bool?
-    @State var verifyLogs = logEvents()
+    @State var verifyLogs = LogEvents()
+    @State var isLoading = false
+    
     let url = "https://neru-1d66dbfe-neru-silent-auth-application-dev.euw1.runtime.vonage.cloud/silentAuthentication"
     let verifyCheckUrl = "https://neru-1d66dbfe-neru-silent-auth-application-dev.euw1.runtime.vonage.cloud/silentAuthenticationCheck"
     let client = VGSilentAuthClient()
-  
+    
     
     var body: some View {
-        
         VStack {
-            
             Image("vonage_V_1024")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 150.0, height: 150.0, alignment: .topLeading)
-            Text("Authenticate your users")
-            Text("with Vonage Silent Auth\n")
-            Text("Please enter number")
-            TextField("number", text: $number)
-                .frame(width: 200)
-                .textFieldStyle(.roundedBorder)
-            
-            Button("Verify") {
-                Task {
-                    do {
-                        
-                        verifyLogs.startDate=Date()
-                        print(Date())
-                        let verifyResponse = try await getCheckURL()
-                        print("verifyResponse")
-                        print("date")
-                        print(verifyResponse)
-                        verifyLogs.getAuthURLDate=Date()
-                        print(Date())
-                        let checkResponse = try await getCheckCode(verifyResponse: verifyResponse)
-                        verifyLogs.callURLDate=Date()
-                        verificationSuccess = await submitCheckCode(checkResponse: checkResponse)
-                        verifyLogs.checkCodeDate=Date()
-                        print("verifyLogs")
-                        print(verifyLogs)
-                    } catch {
-                        print("Error")
+            Text("Authenticate your users \n with Vonage Silent Auth").padding(20)
+        }
+        
+        if isLoading {
+            ProgressView()
+        } else {
+            VStack {
+                Text("Please enter your number")
+                TextField("Number", text: $number)
+                    .frame(width: 200)
+                    .textFieldStyle(.roundedBorder)
+                
+                Button("Verify") {
+                    isLoading = true
+                    Task {
+                        do {
+                            verifyLogs.startDate = Date()
+                            let verifyResponse = try await getCheckURL()
+                            
+                            verifyLogs.getAuthURLDate = Date()
+                            let checkResponse = try await getCheckCode(verifyResponse: verifyResponse)
+                            
+                            verifyLogs.callURLDate = Date()
+                            verificationSuccess = await submitCheckCode(checkResponse: checkResponse)
+                            
+                            verifyLogs.checkCodeDate = Date()
+                            isLoading = false
+                        } catch {
+                            print("Error")
+                        }
+                    }
+                }
+                
+                if verificationSuccess != nil {
+                    if verificationSuccess == true {
+                        Text("Verification Successful")
+                            .background(Color.green)
+                    } else {
+                        Text("Verification Failed")
+                            .background(Color.red)
+                        //Failover layout
                     }
                 }
             }
-
-            if verificationSuccess != nil {
-                if verificationSuccess == true {
-                    Text("Verification Successful")
-                        .background(Color.green)
-                } else {
-                    Text("Verification Failed")
-                        .background(Color.red)
-                    //Failover layout
-                }
-                Text("TimeStamps:").font(.system(size: 15, weight: .semibold))
-                Text("Start Time:").font(.system(size: 10, weight: .semibold))
-                Text(returnDateMillisecString(inputDate: verifyLogs.startDate)).font(.system(size: 10))
-                Text("getAuthURL Time:").font(.system(size: 10, weight: .semibold))
-                Text(returnDateMillisecString(inputDate: verifyLogs.getAuthURLDate)).font(.system(size: 10))
-                Text("callURL Time:").font(.system(size: 10, weight: .semibold))
-                Text(returnDateMillisecString(inputDate: verifyLogs.callURLDate)).font(.system(size: 10))
-                Text("checkCode Time:").font(.system(size: 10, weight: .semibold))
-                Text(returnDateMillisecString(inputDate: verifyLogs.checkCodeDate)).font(.system(size: 10))
-                
-            }
         }
-        .padding()
+        
+        Text("TimeStamps:").font(.system(size: 15, weight: .semibold)).padding(20)
+        
+        if verifyLogs.startDate != nil {
+            Text("Start Time: \(returnDateMillisecString(inputDate: verifyLogs.startDate!))").font(.system(size: 10, weight: .semibold))
+        }
+        
+        if verifyLogs.getAuthURLDate != nil {
+            Text("getAuthURL Time: \(returnDateMillisecString(inputDate: verifyLogs.getAuthURLDate!))").font(.system(size: 10, weight: .semibold))
+        }
+        
+        if verifyLogs.callURLDate != nil {
+            Text("callURL Time: \(returnDateMillisecString(inputDate: verifyLogs.callURLDate!))").font(.system(size: 10, weight: .semibold))
+        }
+        
+        if verifyLogs.checkCodeDate != nil {
+            Text("callURL Time: \(returnDateMillisecString(inputDate: verifyLogs.checkCodeDate!))").font(.system(size: 10, weight: .semibold))
+        }
     }
     
     
@@ -150,6 +159,5 @@ struct ContentView: View {
         print("dateString")
         print(dateString)
         return dateString
-
     }
 }
